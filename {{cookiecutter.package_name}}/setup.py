@@ -1,7 +1,13 @@
 from setuptools import setup
 
-with open("Readme.md", "r") as fh:
-    long_description = fh.read()
+try:
+    with open("Readme.md", "r") as fh:
+        long_description = fh.read()
+except:
+    # When using tox, this is no longer going
+    # to work properly. For this, just add a
+    # dummy description ...
+    long_description = "some long description"
 
 setup(
     name='{{cookiecutter.package_name}}',
