@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd myDocs
-sphinx-apidoc -f -o source ../src
+sphinx-apidoc -f -o source ../{{cookiecutter.package_name}}
 sphinx-build -b html -aE -d doctrees -c source source build/html
 cd ..
 rm -rf docs

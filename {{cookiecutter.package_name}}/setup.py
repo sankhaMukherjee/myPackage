@@ -18,7 +18,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/sankhaMukherjee/{{cookiecutter.package_name}}",
-    packages=setuptools.find_packages(),
+    packages=find_packages(),
     package_data={'':['**/*.json']},
     classifiers=[
         "Programming Language :: Python :: 3",

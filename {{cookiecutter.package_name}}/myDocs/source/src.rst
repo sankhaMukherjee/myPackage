@@ -1,13 +1,13 @@
-src package
-===========
+{{cookiecutter.package_name}} package
+====================================================================================
 
 Submodules
 ----------
 
-src.{{cookiecutter.package_name}} module
-----------------------------------------------------------
+{{cookiecutter.package_name}}.{{cookiecutter.package_name}} module
+------------------------------------------------------------------------------------
 
-.. automodule:: src.{{cookiecutter.package_name}}
+.. automodule:: {{cookiecutter.package_name}}.{{cookiecutter.package_name}}
    :members:
    :undoc-members:
    :show-inheritance:
@@ -16,7 +16,7 @@ src.{{cookiecutter.package_name}} module
 Module contents
 ---------------
 
-.. automodule:: src
+.. automodule:: {{cookiecutter.package_name}}
    :members:
    :undoc-members:
    :show-inheritance:
