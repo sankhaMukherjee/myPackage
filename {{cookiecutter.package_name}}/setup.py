@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 try:
     with open("Readme.md", "r") as fh:
@@ -18,14 +18,16 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/sankhaMukherjee/{{cookiecutter.package_name}}",
-    py_modules=['{{cookiecutter.package_name}}'],
-    package_dir={'':'src'},
+    packages=setuptools.find_packages(),
+    package_data={'':['**/*.json']},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+    ],
+    install_requires=[
     ],
     python_requires='>=3.6',
 )
