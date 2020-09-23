@@ -26,6 +26,7 @@ def sayHello(name=None):
 def main():
 
     parser = argparse.ArgumentParser(prog ='{{cookiecutter.package_name}}', 
-                                     description ='Some basic definition for the package.') 
+                                     description ='Some basic definition for the package.')
+    args = parser.parse_args()
 
     return
