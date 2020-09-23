@@ -1,4 +1,4 @@
-
+import argparse
 
 def sayHello(name=None):
     '''a function that says Hello
@@ -23,3 +23,9 @@ def sayHello(name=None):
 
     
 
+def main():
+
+    parser = argparse.ArgumentParser(prog ='{{cookiecutter.package_name}}', 
+                                     description ='Some basic definition for the package.') 
+
+    return

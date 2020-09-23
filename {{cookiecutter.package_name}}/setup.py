@@ -19,6 +19,10 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/sankhaMukherjee/{{cookiecutter.package_name}}",
     packages=find_packages(),
+    entry_points ={ 
+            'console_scripts': [ 
+                '{{cookiecutter.package_name}} = {{cookiecutter.package_name}}.{{cookiecutter.package_name}}:main'
+            ]}, 
     package_data={'':['**/*.json']},
     classifiers=[
         "Programming Language :: Python :: 3",
