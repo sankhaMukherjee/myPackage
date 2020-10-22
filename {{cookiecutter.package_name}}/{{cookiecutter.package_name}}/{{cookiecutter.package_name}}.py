@@ -29,4 +29,9 @@ def main():
                                      description ='Some basic definition for the package.')
     args = parser.parse_args()
 
+    print('Arguments passed to the parser:')
+    print(args)
+
+    sayHello()
+
     return

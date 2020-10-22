@@ -24,7 +24,11 @@ Git alternatively allows you to install packages directly from Github. Consider 
 
 `pip3 install git+https://github.com/sankhaMukherjee/{{cookiecutter.package_name}}.git`
 
-This has been built upon a Unix system. If you use this for other systems, you may wish to consider building this library from source.
+This has been built upon a Unix system. If you use this for other systems, you 
+may wish to consider building this library from source.  If this is a 
+provate repo, or you use ssh, remember to use the following instead:
+
+`pip3 install git+ssh://git@github.com/sankhaMukherjee/{{cookiecutter.package_name}}.git`
 
 ### Package Building
 
